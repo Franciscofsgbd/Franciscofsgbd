@@ -1,0 +1,11 @@
+   if (mysql_num_rows(result)) {
+    do {
+     if (!strcmp(id, row[0])) {
+      printf("\t记录存在");
+      getchar();
+      mysql_free_result(result);
+      mysql_close(&mysql);
+      return;
+     }
+    } while (row = mysql_fetch_row(result));
+   }
