@@ -1,0 +1,13 @@
+   sql = "insert into tb_book (ID,bookname,author,bookconcern) values('";
+   strcat(dest, sql);
+   strcat(dest, id);
+   strcat(dest, "','");
+   strcat(dest, bookname);
+   strcat(dest, "','");
+   strcat(dest, author);
+   strcat(dest, "','");
+   strcat(dest, bookconcern);
+   strcat(dest, "')");
+   if (mysql_query(&mysql, dest))
+    //fprintf(stderr, "error!", mysql_error(&mysql));
+    printf("error!\n");
