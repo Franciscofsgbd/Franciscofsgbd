@@ -1,0 +1,5 @@
+   * This method inputs a number from the user.
+   * @return The value input as a double.
+   * @exception IOException On input error.
+   * @see IOException
+   */
