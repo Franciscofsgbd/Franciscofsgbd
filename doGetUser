@@ -1,0 +1,4 @@
+protected User doGetUserInstance() throws UserProfileResourceException { 
+		 
+		System.out.println("SampleUserManagerImpl.doGetUserInstance - This operation is not implemented !");  
+		return null; 
